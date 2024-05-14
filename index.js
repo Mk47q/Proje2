@@ -29,7 +29,7 @@ const separateByFour = str => {
 };
 nameElem.input.addEventListener("input", e => {
   let result = separateByFour(e.target.value);
-  outnumber.textContent = result;
+  setValue(outnumber, result);
 });
 
 let button = $_("click-b");
