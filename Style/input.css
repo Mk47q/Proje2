@@ -6,28 +6,20 @@
     font-family: st;
     src: url("../Font/SpaceGrotesk-VariableFont_wght.ttf");
 }
-*{
-    box-sizing: border-box;
-}
 body{
-    background-image: url("../images/bg-main-desktop.png");
-    background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: st;
+    background-image: url("../images/bg-main-desktop.png");
+    background-repeat: no-repeat;
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 374px) {
     body{
         background-image: url("../images/bg-main-mobile.png");
+        background-repeat: no-repeat;
     }
 }
-.continer {
-    width: 95%;
-}
-/* .box__shadow{
-    box-shadow: 2px 32px 10px;
-} */
 }
 .color{
     color:hsl(249, 99%, 64%);
