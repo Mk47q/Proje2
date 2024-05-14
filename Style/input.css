@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities{ 
+@font-face {
+    font-family: st;
+    src: url("../Font/SpaceGrotesk-VariableFont_wght.ttf");
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: st;
+}
+@media only screen and (max-width: 380px) {
+    body{
+        background-image: url("../images/bg-main-mobile.png");
+    }
+}
+.continer {
+    width: 95%;
+}
+/* .box__shadow{
+    box-shadow: 2px 32px 10px;
+} */
+}
+.color{
+    color:hsl(249, 99%, 64%);
+    color:hsl(278, 94%, 30%);
+    color:hsl(0, 100%, 66%);
+    color:hsl(0, 0%, 100%);
+    color:hsl(270, 3%, 87%);
+    color:hsl(279, 6%, 55%);
+    color:hsl(278, 68%, 11%);
+}
