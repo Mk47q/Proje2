@@ -141,9 +141,9 @@ button.addEventListener("click", event => {
     date2Elem.isValid &&
     cvElem.isValid
   ) {
-    form.classList.add("hidden");
-    formcomplet.classList.add("block");
-    formcomplet.classList.add("flex");
+    form.style.display = "none";
+    formcomplet.style.display = "block";
+    formcomplet.style.display = "flex";
   }
 });
 let form = $_("form");
