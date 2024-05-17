@@ -6,7 +6,7 @@
 </head>
 <body>
   <div class="w-[60rem] flex mx-[1rem] max-[640px]:flex-col max-[640px]:w-[23rem]">
-    <div class="basis-[60%] flex items-end flex-col gap-[5rem] pl-2 max-[640px]:flex-col-reverse max-[640px]:gap-0">
+    <div class="basis-[30rem] flex items-end flex-col gap-[5rem] pl-2 md:flex-col-reverse max-[640px]:gap-0">
       <div class="w-[22rem] h-[11rem] mr-[9rem] relative max-[825px]:mr-[5rem] max-[712px]:w-[17.5rem] max-[640px]:top-[-4.7rem]
       max-[640px]:z-10 max-[640px]:mr-[2rem]">
         <img src="./images/bg-card-front.png" alt="" class="w-full h-full">
@@ -30,7 +30,7 @@
         <div class="w-8 h-4 absolute top-[4.9rem] left-[18.4rem] max-[712px]:left-[14.4rem]"><p class="out-cv2 text-[12px] text-[white]">000</p></div>
       </div>
     </div>
-    <div class="basis-[40%] flex justify-center items-center pr-2">
+    <div class="basis-[30rem] flex justify-center items-center pr-2">
       <div class="form-complet  flex-col items-center hidden">
         <div class="mb-4"><img src="./images/icon-complete.svg" alt=""></div>
         <div class="mt-4 mb-[6px]"><h1 class="text-[20px] font-medium">THANK YOU!</h1></div>
@@ -40,24 +40,24 @@
       <form action="" class="form text-[12px]   ">
         <div class="mb-8">
           <label for="">CARDHOLDER NAME</label>
-          <input type="text" title=""  id="" class="inp-name block w-[19.5rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)] capitalize max-[825px]:w-[16.5rem] max-[640px]:w-[18.1rem]" placeholder="e.g. Jane Appleseed" oninput="updateValuename()" maxlength="20">
+          <input type="text" title=""  id="" class="inp-name block w-[19.5rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)] capitalize max-[825px]:w-[16.5rem] max-[640px]:w-[18.1rem]" placeholder="e.g. Jane Appleseed" maxlength="20" required>
           <p class="red-error__name text-[red]"></p>
         </div>
         <div class="mb-8">
           <label for="">CARD NUMBER</label>
-          <input type="text" name="" id="" class="inp-number block w-[19.5rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)] max-[825px]:w-[16.5rem] max-[640px]:w-[18.1rem]" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16">
+          <input type="text" name="" id="" class="inp-number block w-[19.5rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)] max-[825px]:w-[16.5rem] max-[640px]:w-[18.1rem]" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16" required>
           <p class="red-error__number text-[red]"></p>
         </div>
         <div class="flex gap-[1rem] mb-8 max-[825px]:flex-col max-[640px]:flex-row">
           <div>
             <label for="" class="block">EXP. DATE (MM/YY)</label>
-            <input type="text" title="" name="" id="" class="inp-date1 w-[4rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)]" placeholder="MM" oninput="updateValuedate1()" maxlength="2">
-            <input type="text" name="" id="" class="inp-date2 w-[4rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)]" placeholder="YY" oninput="updateValuedate2()" maxlength="2">
+            <input type="text" title="" name="" id="" class="inp-date1 w-[4rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)]" placeholder="MM" maxlength="2" pattern="(0?[1-9]|1[0-2])" required>
+            <input type="text" name="" id="" class="inp-date2 w-[4rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)]" placeholder="YY" maxlength="2" required>
             <p class="red-error__date text-[red]"></p>
           </div>
           <div>
             <label for="" class="block">CVC</label>
-            <input type="text" name="" id="" class="inp-cv2 w-[10rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)] max-[640px]:w-[9rem]" placeholder="e.g. 123" oninput="updateValuecv22()" maxlength="3">
+            <input type="text" name="" id="" class="inp-cv2 w-[10rem] h-[30px] rounded-[4px] mt-[6px] p-[10px] outline-none border-[1px] border-[hsl(270,3%,87%)] max-[640px]:w-[9rem]" placeholder="e.g. 123" maxlength="3" required>
             <p class="red-error__cv2 text-[red]"></p>
           </div>
         </div>
